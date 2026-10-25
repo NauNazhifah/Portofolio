@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naurah Nazhifah — Data, Decoded.</title>
+  <meta name="description" content="Portfolio of Naurah Nazhifah — a data analyst and interface designer turning complex datasets into clear dashboards, visual stories, and useful tools.">
+  <meta name="theme-color" content="#F4EFE6">
+  <meta property="og:title" content="Naurah Nazhifah — Data, Decoded.">
+  <meta property="og:description" content="Data analyst & interface designer. I turn messy datasets into clear, human things.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"></span>
+  </div>
+  <div class="grid-overlay" id="gridOverlay" aria-hidden="true">
+    <div class="grid-overlay__inner shell">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <span class="grid-overlay__label">GRID / 12 COL / 1440 MAX</span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell header__inner">
+      <a class="brand" href="#top" aria-label="Naurah Nazhifah — back to top">
+        <span class="brand__mark" aria-hidden="true">NN<i></i></span>
+        <span class="brand__text">Naurah<br>Nazhifah</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#work" data-nav="work">Work</a>
+        <a class="nav__link" href="#about" data-nav="about">About</a>
+        <a class="nav__link" href="#process" data-nav="process">Process</a>
+        <a class="nav__link" href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <div class="header__right">
+        <span class="availability"><span class="dot-pulse"></span>Open for select work</span>
+        <button class="grid-btn" id="gridToggle" type="button" aria-pressed="false" aria-label="Toggle layout grid" title="Toggle layout grid (G)">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h5v5H2zM9 2h5v5H9zM2 9h5v5H2zM9 9h5v5H9z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <a class="btn btn--small btn--dark header__cta" href="#contact">Let's talk<span class="btn__arrow" aria-hidden="true">↗</span></a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="menuDialog" aria-expanded="false">
+          <span class="menu-btn__label">Menu</span>
+          <span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  </header>
+
+  <dialog class="menu-dialog" id="menuDialog" aria-label="Site menu">
+    <div class="menu-dialog__inner shell">
+      <div class="menu-dialog__top">
+        <span class="menu-dialog__tag">NN / INDEX — 2026</span>
+        <button class="menu-dialog__close" type="button" data-menu-close>Close <span aria-hidden="true">✕</span></button>
+      </div>
+      <nav class="menu-dialog__nav" aria-label="Mobile">
+        <a href="#work" data-menu-link><span>01</span>Work<em>↗</em></a>
+        <a href="#about" data-menu-link><span>02</span>About<em>↗</em></a>
+        <a href="#process" data-menu-link><span>03</span>Process<em>↗</em></a>
+        <a href="#contact" data-menu-link><span>04</span>Contact<em>↗</em></a>
+      </nav>
+      <div class="menu-dialog__foot">
+        <a href="mailto:hello@naurah.design">hello@naurah.design</a>
+        <span>Indonesia — <span class="js-clock">--:--</span> WIB</span>
+      </div>
+    </div>
+  </dialog>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="shell">
+        <div class="hero__meta" data-reveal>
+          <span class="meta-item"><span class="meta-pip" aria-hidden="true"></span>Portfolio — Vol. 01 / 2026</span>
+          <span class="meta-item meta-item--mid">Data analyst &amp; interface designer</span>
+          <span class="meta-item">Indonesia — GMT+7</span>
+        </div>
+
+        <div class="hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow" data-reveal>Data / Design / Decisions</p>
+            <h1 class="hero__title" id="hero-title" aria-label="Data, decoded.">
+              <span class="hero__line hero__line--one" aria-hidden="true">Data,</span>
+              <span class="hero__line hero__line--two" aria-hidden="true"><em>decoded</em><span class="hero__dot">.</span></span>
+            </h1>
+            <p class="hero__lede" data-reveal style="--reveal-delay:80ms">I'm Naurah — a data analyst and interface designer turning complicated datasets into clear, human things: dashboards, visual essays, and tools that make the next decision feel obvious.</p>
+            <div class="hero__actions" data-reveal style="--reveal-delay:160ms">
+              <a class="btn btn--primary" href="#work">Explore selected work<span class="btn__arrow" aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#about">The human behind it<span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="hero__note" data-reveal style="--reveal-delay:240ms"><span class="dot-pulse" aria-hidden="true"></span><span class="js-decode" data-text="Available for select projects — Q1 2027">Available for select projects — Q1 2027</span></p>
+          </div>
+
+          <aside class="id-card" data-reveal data-tilt style="--reveal-delay:120ms" aria-label="Personal profile card">
+            <div class="id-card__bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="id-card__file">identity.json</span>
+              <span class="id-card__live"><span class="dot-pulse" aria-hidden="true"></span>live</span>
+            </div>
+            <div class="id-card__portrait">
+              <div class="portrait__halftone" aria-hidden="true"></div>
+              <span class="id-card__sticker">Open to<br>good ideas</span>
+              <div class="portrait__monogram" aria-hidden="true" data-tilt-layer>
+                <span>N</span><span>N</span><span>N</span>
+              </div>
+              <span class="portrait__caption">Fig. 01 — human, approximately</span>
+              <span class="portrait__cross portrait__cross--tl" aria-hidden="true"></span>
+              <span class="portrait__cross portrait__cross--br" aria-hidden="true"></span>
+            </div>
+            <div class="id-card__body">
+              <div class="id-card__heading">
+                <h2 class="id-card__name">Naurah Nazhifah</h2>
+                <p class="id-card__role">Data analyst &amp; interface designer</p>
+              </div>
+              <div class="id-card__clock-row">
+                <div>
+                  <span class="micro-label">Local time / WIB</span>
+                  <span class="id-card__clock js-clock">--:--:--</span>
+                </div>
+                <span class="id-card__tz">GMT<br>+7</span>
+              </div>
+              <dl class="id-card__facts">
+                <div><dt>Base</dt><dd>Indonesia</dd></div>
+                <div><dt>Focus</dt><dd>Data × design × systems</dd></div>
+                <div><dt>Status</dt><dd class="is-open">Open for select work</dd></div>
+                <div><dt>Response</dt><dd>Within 48 hours</dd></div>
+              </dl>
+              <div class="id-card__barcode" aria-hidden="true"></div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="statusbar" data-reveal>
+          <div class="statusbar__cell">
+            <span class="micro-label">Status</span>
+            <span class="statusbar__value"><span class="dot-pulse" aria-hidden="true"></span>Open for select work</span>
+          </div>
+          <div class="statusbar__cell">
+            <span class="micro-label">Base</span>
+            <span class="statusbar__value">Indonesia <span class="muted">/ GMT+7</span></span>
+          </div>
+          <div class="statusbar__cell">
+            <span class="micro-label">Focus</span>
+            <span class="statusbar__value">Data, design &amp; decision tools</span>
+          </div>
+          <a class="statusbar__cell statusbar__cell--link" href="#work">
+            <span class="micro-label">Next</span>
+            <span class="statusbar__value">Scroll to decode <span aria-hidden="true">↓</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__group">
+          <span>Data storytelling</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Dashboards</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>SQL &amp; Python</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Visual systems</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Open data</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Interface design</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Clear decisions</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+        </div>
+        <div class="ticker__group">
+          <span>Data storytelling</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Dashboards</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>SQL &amp; Python</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Visual systems</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Open data</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Interface design</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+          <span>Clear decisions</span><svg class="spark" viewBox="0 0 24 24"><path d="M12 0l2 10 10 2-10 2-2 10-2-10L0 12l10-2z"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-head__top" data-reveal>
+            <span class="section-label"><span class="section-label__num">01</span>Selected work</span>
+            <span class="section-meta">04 case files / 2024—2026</span>
+          </div>
+          <div class="section-head__main">
+            <h2 class="section-title" id="work-title" data-reveal>Selected <em>decodes.</em></h2>
+            <p class="section-desc" data-reveal style="--reveal-delay:80ms">A few recent problems, pulled apart and put back together as dashboards, data stories and small tools. Open a case file to see the messy middle.</p>
+          </div>
+        </div>
+
+        <div class="projects">
+          <article class="project project--sand project--wide" data-accent="sand" data-reveal>
+            <div class="project__visual">
+              <span class="art__meta art__meta--tl">Live / 09:41</span>
+              <span class="art__meta art__meta--tr">6 channels</span>
+              <div class="art art--retail" aria-hidden="true">
+                <div class="retail-panel">
+                  <div class="retail-panel__top"><span>Gross sales</span><span class="chip">+32.4%</span></div>
+                  <div class="retail-panel__value">$412.8<span>K</span></div>
+                  <svg class="retail-chart" viewBox="0 0 360 110" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="retailFill" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#A1020F" stop-opacity=".22"/>
+                        <stop offset="100%" stop-color="#A1020F" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <path class="chart-grid" d="M0 22H360M0 56H360M0 90H360"/>
+                    <path class="chart-area" d="M0 92C30 84 44 70 72 74S118 88 146 66s44-28 74-22 42 22 74 10 44-26 66-30v86H0Z" fill="url(#retailFill)"/>
+                    <path class="chart-line draw-path" d="M0 92C30 84 44 70 72 74S118 88 146 66s44-28 74-22 42 22 74 10 44-26 66-30" fill="none" stroke="#A1020F" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle class="chart-point" cx="338" cy="24" r="5"/>
+                  </svg>
+                  <div class="retail-panel__foot">
+                    <div class="mini-bars" aria-hidden="true">
+                      <i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:80%"></i><i style="--h:56%"></i><i style="--h:94%"></i><i style="--h:70%"></i>
+                    </div>
+                    <span>Week 24 / 2026</span>
+                  </div>
+                </div>
+                <span class="art__stamp">Decoded<br>01</span>
+                <span class="retail-orbit"></span>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__title-row">
+                <h3>Retail Pulse</h3>
+                <span class="project__arrow" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M5 15L15 5M7 5h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+              </div>
+              <p>A live trading view for a 14-store fashion retailer — stock, sell-through and margin in one Monday-morning glance.</p>
+              <ul class="project__tags"><li>SQL</li><li>BigQuery</li><li>Tableau</li></ul>
+              <span class="project__year">2026 / Analytics dashboard</span>
+            </div>
+            <button class="project__hit" type="button" data-case-open="retail" aria-haspopup="dialog" aria-label="Open case study: Retail Pulse"></button>
+          </article>
+
+          <article class="project project--red project--narrow" data-accent="red" data-reveal style="--reveal-delay:80ms">
+            <div class="project__visual">
+              <span class="art__meta art__meta--tl">Movement / 24h</span>
+              <span class="art__meta art__meta--tr">1.2M trips</span>
+              <div class="art art--civic" aria-hidden="true">
+                <svg class="civic-map" viewBox="0 0 560 380" preserveAspectRatio="xMidYMid slice">
+                  <g class="civic-grid">
+                    <path d="M0 76H560M0 152H560M0 228H560M0 304H560M112 0V380M224 0V380M336 0V380M448 0V380"/>
+                  </g>
+                  <path class="civic-route civic-route--quiet draw-path" d="M-30 292C60 230 96 330 190 264S346 140 590 208"/>
+                  <path class="civic-route civic-route--quiet draw-path" d="M-30 150C80 196 148 96 236 150s170 92 354 34"/>
+                  <path class="civic-route civic-route--lime draw-path" d="M-20 248C92 212 108 288 208 244S354 104 580 168"/>
+                  <g class="civic-nodes">
+                    <circle cx="94" cy="238" r="4"/><circle cx="208" cy="244" r="7" class="is-key"/><circle cx="322" cy="178" r="4"/><circle cx="424" cy="140" r="4"/><circle cx="514" cy="156" r="7" class="is-key"/>
+                    <circle cx="190" cy="264" r="3"/><circle cx="348" cy="160" r="3"/><circle cx="110" cy="300" r="3"/>
+                  </g>
+                </svg>
+                <div class="civic-badge">
+                  <span class="civic-badge__value">86%</span>
+                  <span class="civic-badge__label">of trips share<br>12 corridors</span>
+                </div>
+                <span class="art__coordinates">06°12′S / 106°49′E</span>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__title-row">
+                <h3>Civic Flow</h3>
+                <span class="project__arrow" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M5 15L15 5M7 5h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+              </div>
+              <p>An interactive essay tracing 1.2 million commuter trips — and the twelve corridors carrying most of them.</p>
+              <ul class="project__tags"><li>Python</li><li>GeoPandas</li><li>D3.js</li></ul>
+              <span class="project__year">2025 / Data story</span>
+            </div>
+            <button class="project__hit" type="button" data-case-open="civic" aria-haspopup="dialog" aria-label="Open case study: Civic Flow"></button>
+          </article>
+
+          <article class="project project--ink project--narrow" data-accent="ink" data-reveal>
+            <div class="project__visual">
+              <span class="art__meta art__meta--tl">Ledger / Jun</span>
+              <span class="art__meta art__meta--tr">Margin-first</span>
+              <div class="art art--kopi" aria-hidden="true">
+                <div class="ledger">
+                  <div class="ledger__head"><span>Kopi Ledger</span><span>06 / 26</span></div>
+                  <div class="ledger__main">
+                    <div class="donut"><span>68<small>%</small></span></div>
+                    <ul class="legend">
+                      <li><i class="legend__dot legend__dot--lime"></i><span>Beans</span><b>34</b></li>
+                      <li><i class="legend__dot legend__dot--orange"></i><span>Rent</span><b>26</b></li>
+                      <li><i class="legend__dot legend__dot--sand"></i><span>Labour</span><b>22</b></li>
+                      <li><i class="legend__dot legend__dot--quiet"></i><span>Other</span><b>18</b></li>
+                    </ul>
+                  </div>
+                  <div class="ledger__rows">
+                    <div><span>Latte / cup</span><b>Rp 28K</b></div>
+                    <div><span>Margin / cup</span><b class="is-accent">Rp 19K</b></div>
+                  </div>
+                  <div class="ledger__button">View report<span>↗</span></div>
+                </div>
+                <span class="kopi-sticker">Margin<br><strong>68%</strong><br>up 4.2</span>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__title-row">
+                <h3>Kopi Ledger</h3>
+                <span class="project__arrow" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M5 15L15 5M7 5h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+              </div>
+              <p>A calm, glanceable ledger that helps independent coffee shops see margin per cup — without a single spreadsheet.</p>
+              <ul class="project__tags"><li>React</li><li>TypeScript</li><li>Supabase</li></ul>
+              <span class="project__year">2025 / Product concept</span>
+            </div>
+            <button class="project__hit" type="button" data-case-open="kopi" aria-haspopup="dialog" aria-label="Open case study: Kopi Ledger"></button>
+          </article>
+
+          <article class="project project--orange project--wide" data-accent="orange" data-reveal style="--reveal-delay:80ms">
+            <div class="project__visual">
+              <span class="art__meta art__meta--tl">Public data journal</span>
+              <span class="art__meta art__meta--tr">Issue 012</span>
+              <div class="art art--notes" aria-hidden="true">
+                <span class="notes-orbit"></span>
+                <div class="notes-stack">
+                  <div class="note note--back"></div>
+                  <div class="note note--mid"></div>
+                  <div class="note note--front">
+                    <span class="note__kicker">Field Notes / 012</span>
+                    <span class="note__big">A city<br>in <em>transit.</em></span>
+                    <span class="note__rule"></span>
+                    <span class="note__foot">12 charts · 8 interviews · 1 dataset</span>
+                  </div>
+                </div>
+                <span class="notes-star">✳</span>
+                <span class="notes-meta">12 / 12 issues</span>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__title-row">
+                <h3>Field Notes</h3>
+                <span class="project__arrow" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M5 15L15 5M7 5h8v8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+              </div>
+              <p>A self-initiated visual journal: one public dataset, one story, one issue at a time. No dashboards — just the joy of looking closely.</p>
+              <ul class="project__tags"><li>Svelte</li><li>SVG</li><li>Editorial</li></ul>
+              <span class="project__year">2026—now / Data journal</span>
+            </div>
+            <button class="project__hit" type="button" data-case-open="notes" aria-haspopup="dialog" aria-label="Open case study: Field Notes"></button>
+          </article>
+        </div>
+
+        <div class="work__foot" data-reveal>
+          <p>There's more where that came from.</p>
+          <a class="text-link" href="mailto:hello@naurah.design?subject=Extended%20portfolio%20deck">Ask for the extended deck<span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-head__top" data-reveal>
+            <span class="section-label"><span class="section-label__num">02</span>About</span>
+            <span class="section-meta">The human / off duty &amp; on record</span>
+          </div>
+          <div class="section-head__main">
+            <h2 class="section-title" id="about-title" data-reveal>Behind the <em>dashboard.</em></h2>
+            <p class="section-desc" data-reveal style="--reveal-delay:80ms">The short version: I like hard questions, clean type, and making people say “oh — that's what the data meant.”</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <figure class="about-portrait" data-reveal>
+            <div class="poster">
+              <div class="poster__halftone" aria-hidden="true"></div>
+              <span class="poster__label">Portrait / 001</span>
+              <span class="poster__corner poster__corner--tr" aria-hidden="true"></span>
+              <div class="poster__monogram" aria-hidden="true">N</div>
+              <span class="poster__orb poster__orb--red" aria-hidden="true"></span>
+              <span class="poster__orb poster__orb--lime" aria-hidden="true"></span>
+              <span class="poster__tape">scroll / signal</span>
+              <div class="poster__meta">Naurah Nazhifah<br>Data &amp; interface<br>ID 026 / 2026</div>
+              <span class="poster__note">Self-portrait,<br>rendered in data.</span>
+            </div>
+            <figcaption>Fig. 02 — the analyst at rest / Indonesia, 2026</figcaption>
+          </figure>
+
+          <div class="about-copy">
+            <p class="about-lead" data-reveal>I make the complex feel <em>obvious.</em> Then I make it beautiful enough that people actually look.</p>
+            <div class="about-text" data-reveal style="--reveal-delay:80ms">
+              <p>I'm Naurah, a data analyst and interface designer based in Indonesia. My work sits between the query and the canvas: cleaning the messy middle, finding the one chart that matters, and shaping the little interface that gets it into someone's hands.</p>
+              <p>I've spent the past few years turning sales, mobility and public data into things people use — dashboards, visual essays, prototypes. I care about honest axes, accessible colour, and interfaces that explain themselves before you have to.</p>
+              <p>Off-screen: film photography, thrifted posters, and an ongoing search for the best pour-over in town.</p>
+            </div>
+            <div class="signature" data-reveal style="--reveal-delay:120ms">
+              <span class="signature__name">Naurah</span>
+              <span class="signature__role">Analyst / designer / professional question-asker</span>
+            </div>
+            <div class="toolkit" data-reveal style="--reveal-delay:160ms">
+              <div class="toolkit__group"><h3>Data</h3><ul><li>SQL</li><li>Python</li><li>Pandas</li><li>BigQuery</li><li>dbt</li></ul></div>
+              <div class="toolkit__group"><h3>Visual</h3><ul><li>Tableau</li><li>D3.js</li><li>Figma</li><li>Illustrator</li></ul></div>
+              <div class="toolkit__group"><h3>Build</h3><ul><li>React</li><li>TypeScript</li><li>Svelte</li><li>SVG</li></ul></div>
+            </div>
+          </div>
+
+          <aside class="about-side">
+            <div class="panel capabilities" data-reveal style="--reveal-delay:100ms">
+              <div class="panel__head"><span>Capability readout</span><span aria-hidden="true">↗</span></div>
+              <div class="bars" data-bars>
+                <div class="bar" style="--value:94%"><div class="bar__top"><span>Analysis &amp; modeling</span><span class="bar__value">94</span></div><div class="bar__track"><span class="bar__fill"></span></div></div>
+                <div class="bar" style="--value:90%"><div class="bar__top"><span>Data visualization</span><span class="bar__value">90</span></div><div class="bar__track"><span class="bar__fill"></span></div></div>
+                <div class="bar" style="--value:82%"><div class="bar__top"><span>Interface &amp; front-end</span><span class="bar__value">82</span></div><div class="bar__track"><span class="bar__fill"></span></div></div>
+                <div class="bar" style="--value:88%"><div class="bar__top"><span>Story &amp; narrative</span><span class="bar__value">88</span></div><div class="bar__track"><span class="bar__fill"></span></div></div>
+              </div>
+              <p class="panel__note">Self-reported / updated Q4 2026</p>
+            </div>
+
+            <div class="panel now" data-reveal style="--reveal-delay:160ms">
+              <div class="panel__head"><span>Now / 2026</span><span class="live-tag"><span class="dot-pulse" aria-hidden="true"></span>live</span></div>
+              <dl class="now__list">
+                <div><dt>Reading</dt><dd>The Visual Display of Quantitative Information</dd></div>
+                <div><dt>Learning</dt><dd>dbt + DuckDB</dd></div>
+                <div><dt>Listening</dt><dd>Ambient &amp; rain</dd></div>
+                <div><dt>Open to</dt><dd>Select projects / 2027</dd></div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+
+        <div class="about-stats" data-reveal>
+          <div class="stat"><span class="stat__value" data-count="24">24</span><span class="stat__label">Projects decoded</span></div>
+          <div class="stat"><span class="stat__value" data-count="1.8" data-suffix="M">1.8M</span><span class="stat__label">Rows wrangled</span></div>
+          <div class="stat"><span class="stat__value" data-count="4" data-pad="2">04</span><span class="stat__label">Years in the data wild</span></div>
+          <div class="stat"><span class="stat__value stat__value--infinity">∞</span><span class="stat__label">Questions collected</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="shell">
+        <div class="section-head section-head--inverse">
+          <div class="section-head__top" data-reveal>
+            <span class="section-label"><span class="section-label__num">03</span>Process</span>
+            <span class="section-meta">Raw → readable / repeatable, not rigid</span>
+          </div>
+          <div class="section-head__main">
+            <h2 class="section-title" id="process-title" data-reveal>The decode <em>ritual.</em></h2>
+            <p class="section-desc" data-reveal style="--reveal-delay:80ms">A flexible four-step loop for turning questions into clarity. The order is intentional; the loops are inevitable.</p>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <div class="step__top"><span class="step__num">01</span><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="9" cy="10" r="3"/><circle cx="23" cy="8" r="2"/><circle cx="20" cy="23" r="3"/><circle cx="7" cy="24" r="2"/><path d="M11 12l7 9M12 9l9-1M18 22l5-12M9 22l-1 1"/></svg></div>
+            <h3>Gather</h3>
+            <p>Start with the decision, not the dataset. Interview, audit, and ask the annoying questions before touching a chart.</p>
+            <span class="step__tag">Questions → sources</span>
+          </li>
+          <li class="step" data-reveal style="--reveal-delay:70ms">
+            <div class="step__top"><span class="step__num">02</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8h22M7 14h18M9 20h14M11 26h10"/><circle cx="16" cy="8" r="2"/><circle cx="9" cy="20" r="1.5"/></svg></div>
+            <h3>Clean</h3>
+            <p>Tame the spreadsheets. Document every choice, because the tidiest dataset is still full of human decisions.</p>
+            <span class="step__tag">Mess → method</span>
+          </li>
+          <li class="step" data-reveal style="--reveal-delay:140ms">
+            <div class="step__top"><span class="step__num">03</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v24M4 16h24M8 8l16 16M24 8L8 24"/><circle cx="16" cy="16" r="4"/></svg></div>
+            <h3>Decode</h3>
+            <p>Find the angle. Sketch ten versions, kill nine, and build the one visual logic that makes the point impossible to miss.</p>
+            <span class="step__tag">Signal → story</span>
+          </li>
+          <li class="step" data-reveal style="--reveal-delay:210ms">
+            <div class="step__top"><span class="step__num">04</span><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="5" width="20" height="22" rx="2"/><path d="M11 12h10M11 17h6M11 22h8"/><path d="M22 26l4 2-1-5"/></svg></div>
+            <h3>Deliver</h3>
+            <p>Ship it with a manual. A dashboard is only useful if someone else can explain it without you in the room.</p>
+            <span class="step__tag">Clarity → handover</span>
+          </li>
+        </ol>
+
+        <div class="process__foot" data-reveal>
+          <p class="process__quote">“Clarity is a feature,<br>not a finishing touch.”</p>
+          <span class="process__note">Loops expected /<br>iteration welcome</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell">
+        <div class="contact__top" data-reveal>
+          <span class="section-label section-label--inverse"><span class="section-label__num">04</span>Contact</span>
+          <span class="section-meta">No forms / just a real inbox</span>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__copy">
+            <p class="eyebrow eyebrow--lime" data-reveal>Open for select projects — Q1 2027</p>
+            <h2 class="contact__title" id="contact-title" data-reveal style="--reveal-delay:60ms">Let's decode<br><em>it together.</em></h2>
+            <p class="contact__lede" data-reveal style="--reveal-delay:120ms">Freelance projects, full-time roles, or a dataset you can't stop thinking about — I'm all ears. The best briefs start with a good question.</p>
+          </div>
+
+          <div class="contact__action" data-reveal style="--reveal-delay:160ms">
+            <span class="micro-label">Start a conversation</span>
+            <a class="contact__email" href="mailto:hello@naurah.design">hello@naurah.design<span aria-hidden="true">↗</span></a>
+            <a class="btn btn--lime" href="mailto:hello@naurah.design?subject=Let%27s%20decode%20something">Say hello<span class="btn__arrow" aria-hidden="true">↗</span></a>
+            <div class="contact__meta">
+              <span><span class="dot-pulse" aria-hidden="true"></span>Usually replies within 48h</span>
+              <span>Indonesia / <span class="js-clock">--:--</span> WIB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__links" data-reveal>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>Professional-ish ↗</span></a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>Experiments &amp; code ↗</span></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>Less data, more life ↗</span></a>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__bar">
+            <span>© <span id="year">2026</span> Naurah Nazhifah</span>
+            <span class="footer__note">Built with curiosity, coffee &amp; CSS</span>
+            <span class="footer__grid-hint">Press <kbd>G</kbd> for grid</span>
+            <span>Indonesia / <span class="js-clock">--:--</span> WIB</span>
+            <a class="footer__top" href="#top">Back to top<span aria-hidden="true">↑</span></a>
+          </div>
+          <div class="footer__word" aria-hidden="true">DECODED</div>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <dialog class="case-dialog" id="caseDialog" aria-labelledby="caseTitle">
+    <div class="case-dialog__inner">
+      <header class="case-dialog__bar">
+        <span class="case-dialog__file">case_file / <span id="caseFileIndex">01</span></span>
+        <button class="case-dialog__close" type="button" data-case-close>Close<span aria-hidden="true">✕</span></button>
+      </header>
+      <div class="case-dialog__hero" id="caseHero">
+        <span class="case-dialog__index" id="caseIndex" aria-hidden="true">01</span>
+        <div class="case-dialog__heading">
+          <p class="case-dialog__kicker" id="caseKicker">Analytics dashboard</p>
+          <h2 id="caseTitle">Retail Pulse</h2>
+          <p id="caseSummary"></p>
+        </div>
+      </div>
+      <div class="case-dialog__specs" id="caseSpecs"></div>
+      <div class="case-dialog__body">
+        <div><h3>The brief</h3><p id="caseBrief"></p></div>
+        <div><h3>The decode</h3><p id="caseDecode"></p></div>
+        <div><h3>The result</h3><p id="caseResult"></p></div>
+      </div>
+      <div class="case-dialog__outcomes" id="caseOutcomes"></div>
+      <div class="case-dialog__foot">
+        <ul class="project__tags" id="caseTags"></ul>
+        <div class="case-dialog__nav">
+          <button type="button" data-case-prev>← Prev</button>
+          <button type="button" data-case-next>Next →</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
