@@ -30,7 +30,7 @@ Font (Space Grotesk, Instrument Serif, JetBrains Mono) dimuat dari Google Fonts,
 2. **Tautan sosial**
    Cari `LinkedIn`, `GitHub`, dan `Instagram` di bagian contact (`index.html`). Saat ini tautannya masih mengarah ke halaman utama platform — ganti dengan URL profil kamu.
 3. **Proyek**
-   - Kartu dan visual ada di `index.html` (bagian `<!-- SECTIONS -->` sebelumnya, di dalam `.projects`).
+   - Kartu dan visual ada di `index.html`, di dalam blok `.projects`.
    - Isi detail saat kartu diklik ada di `main.js`, objek `cases` (`retail`, `civic`, `kopi`, `notes`).
 4. **Statistik & skill**
    Angka di `.about-stats` memakai atribut `data-count`. Bar skill memakai custom property `--value` pada elemen `.bar`.
@@ -43,6 +43,8 @@ Font (Space Grotesk, Instrument Serif, JetBrains Mono) dimuat dari Google Fonts,
    - `--orange: #D18034`
    - `--sand: #E8BE97`
    - ditambah kertas hangat `--paper: #F4EFE6` dan tinta `--ink: #17130F`.
+
+   Merah dipakai sebagai aksen kecil (nav aktif, kata italic, label, detail chart), bukan sebagai blok besar. Permukaan besar seperti section process dan kartu Civic Flow memakai `--ink`, mengikuti referensi warna contact section.
 
 ## Interaksi
 
