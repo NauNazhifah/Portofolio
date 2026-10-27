@@ -44,7 +44,7 @@ Font (Space Grotesk, Instrument Serif, JetBrains Mono) dimuat dari Google Fonts,
    - `--sand: #E8BE97`
    - ditambah kertas hangat `--paper: #F4EFE6` dan tinta `--ink: #17130F`.
 
-   Merah dipakai sebagai aksen kecil (nav aktif, kata italic, label, detail chart), bukan sebagai blok besar. Permukaan besar seperti section process dan kartu Civic Flow memakai `--ink`, mengikuti referensi warna contact section.
+   Kata italic besar di permukaan terang memakai `--orange`; di section gelap (Process, Contact) memakai `--lime`. Merah dipakai sangat hemat sebagai aksen kecil (nav aktif, status, label, titik chart), bukan sebagai blok besar. Permukaan besar seperti section process dan kartu Civic Flow memakai `--ink`, mengikuti referensi warna contact section.
 
 ## Interaksi
 

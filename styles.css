@@ -518,10 +518,10 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
   font-style: italic;
   font-weight: 400;
   letter-spacing: -.035em;
-  color: var(--red);
+  color: var(--orange);
   padding-right: .02em;
 }
-.hero__dot { color: var(--red); }
+.hero__dot { color: var(--ink); }
 .hero__lede {
   max-width: 47ch;
   margin-top: clamp(24px, 3vw, 38px);
@@ -792,7 +792,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
   font-style: italic;
   font-weight: 400;
   letter-spacing: -.02em;
-  color: var(--red);
+  color: var(--orange);
 }
 .section-desc {
   max-width: 42ch;
@@ -1228,7 +1228,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
   letter-spacing: -.035em;
   font-weight: 500;
 }
-.about-lead em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--red); }
+.about-lead em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--orange); }
 .about-text { margin-top: 22px; display: grid; gap: 13px; }
 .about-text p { max-width: 55ch; font-size: 14.5px; line-height: 1.68; color: var(--ink-soft); }
 .signature { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); }
