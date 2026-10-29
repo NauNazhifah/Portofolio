@@ -326,7 +326,7 @@
       specs: [["Role", "Data analyst & visual designer"], ["Timeline", "8 weeks / 2025"], ["Stack", "Python · GeoPandas · D3.js"]],
       outcomes: [["1.2M", "Trips traced"], ["12", "Key corridors"], ["05 min", "Reading time"]],
       tags: ["Python", "GeoPandas", "D3.js", "Data story"],
-      accent: "ink"
+      accent: "red"
     },
     kopi: {
       index: "03",
