@@ -38,12 +38,12 @@ Font (Space Grotesk, Instrument Serif, JetBrains Mono) dimuat dari Google Fonts,
    Saat ini potret dibuat dari tipografi dan bentuk CSS (`.poster`) supaya tetap terlihat rapi tanpa foto. Untuk memakai foto asli, ganti isi `.poster` dengan `<img>` dan sesuaikan CSS-nya.
 6. **Warna**
    Semua warna ada di blok `:root` pada `styles.css`:
+   - `--bg: #000000`
    - `--paper: #F4EFE6`
-   - `--ink: #17130F`
    - `--muted: #17130F66`
    - `--lime: #92F56E`
 
-   Palet sekarang hanya memakai kertas, tinta, tinta transparan, dan lime. Lime dipakai untuk aksen (ticker, tombol, titik judul, detail chart, orb poster), `--muted` untuk permukaan besar seperti kartu identitas, poster about, dan visual Retail Pulse, sedangkan Civic Flow, Kopi Ledger, process, dan contact memakai `--ink`.
+   Halaman memakai latar hitam. Kertas `--paper` dipakai untuk teks dan kartu terang (project, panel About, dialog), `--muted` untuk permukaan abu-abu seperti kartu identitas, poster About, dan visual Retail Pulse, sedangkan `--lime` menjadi aksen (ticker, tombol, titik judul, detail chart, orb poster). Process dan Contact juga memakai latar hitam dengan teks kertas dan aksen lime.
 
 ## Interaksi
 
