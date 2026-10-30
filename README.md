@@ -48,6 +48,15 @@ Font (Space Grotesk, Instrument Serif, JetBrains Mono) dimuat dari Google Fonts,
 
    Tema **Moulin Rouge**: latar hitam keoxblood dengan glow radial merah tua, teks dan kartu champagne, aksen emas pada tombol/titik/detail chart, serta crimson pada ticker, visual Civic Flow, orb poster, dan hero dialog. `--muted` tetap menjadi lapisan netral untuk kartu identitas, poster About, dan visual Retail Pulse.
 
+## Monogram
+
+Huruf awal **N** di kartu identitas dan poster About adalah SVG inline, bukan teks font. Siluetnya diambil dari **Cinzel Decorative Black** (lisensi OFL) dengan tambahan dua bintang empat sudut sebagai inlay. Untuk huruf awal berikutnya, pertahankan sistem yang sama: serif kontras tinggi dengan swash, satu atau dua bintang di batang huruf, lalu susun lapisannya seperti ini:
+
+- Kartu identitas: emas (`--gold`) → crimson (`--rouge`) → ink, dengan bintang champagne.
+- Poster About: bayangan emas → rouge-deep, dengan bintang champagne.
+
+Font **Luna Morta** asli tidak disertakan karena lisensi komersial; gaya di atas adalah interpretasi yang aman untuk dipakai.
+
 ## Interaksi
 
 - Klik kartu proyek untuk membuka **case file** (modal).
