@@ -68,6 +68,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.svg-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 /* velvet light: oxblood + gold ambience behind the whole page */
 body::before {
   content: "";
@@ -647,16 +654,29 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
   transform: translate(calc(var(--mx, 0) * 8px), calc(var(--my, 0) * 8px));
   transition: transform .5s var(--ease);
 }
-.portrait__monogram span {
+.monogram__layer {
   position: absolute;
-  font-family: var(--font-serif);
-  font-size: clamp(12rem, 15vw, 15.5rem);
-  line-height: .72;
-  letter-spacing: -.06em;
+  left: 50%;
+  top: 50%;
+  width: clamp(175px, 16vw, 228px);
+  aspect-ratio: 184 / 138;
+  height: auto;
+  display: block;
+  fill: currentColor;
 }
-.portrait__monogram span:nth-child(1) { color: var(--rouge); transform: translate(-9px, 7px); }
-.portrait__monogram span:nth-child(2) { color: var(--muted); transform: translate(8px, -5px); }
-.portrait__monogram span:nth-child(3) { color: var(--ink); }
+.monogram__layer--back {
+  color: var(--gold);
+  transform: translate(calc(-50% - 9px), calc(-50% + 7px));
+}
+.monogram__layer--mid {
+  color: var(--rouge);
+  transform: translate(calc(-50% + 8px), calc(-50% - 5px));
+}
+.monogram__layer--front {
+  color: var(--ink);
+  transform: translate(-50%, -50%);
+}
+.monogram__star { fill: var(--gold-soft); }
 .id-card__sticker {
   position: absolute;
   top: 20px;
@@ -1225,14 +1245,27 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
   position: absolute;
   left: 50%;
   top: 46%;
+  width: clamp(190px, 17vw, 246px);
+  aspect-ratio: 184 / 138;
   transform: translate(-52%, -50%);
-  font-family: var(--font-serif);
-  font-size: clamp(10rem, 20vw, 19rem);
-  line-height: .7;
-  letter-spacing: -.08em;
   color: var(--ink);
+  z-index: 1;
 }
-.poster__orb { position: absolute; border-radius: 50%; }
+.poster__monogram svg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+.poster__monogram-shadow {
+  color: var(--gold);
+  transform: translate(9px, 10px);
+}
+.poster__monogram-front { color: var(--rouge-deep); }
+.poster__monogram-star { fill: var(--gold-soft); }
+.poster__orb { position: absolute; border-radius: 50%; z-index: 0; }
 .poster__orb--orange {
   width: 46%;
   aspect-ratio: 1;
@@ -1252,6 +1285,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
   position: absolute;
   right: 12px;
   top: 46%;
+  z-index: 2;
   padding: 5px 9px;
   background: var(--ink);
   color: var(--lime);
