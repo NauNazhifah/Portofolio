@@ -38,15 +38,15 @@ Font (Space Grotesk, Instrument Serif, JetBrains Mono) dimuat dari Google Fonts,
    Saat ini potret dibuat dari tipografi dan bentuk CSS (`.poster`) supaya tetap terlihat rapi tanpa foto. Untuk memakai foto asli, ganti isi `.poster` dengan `<img>` dan sesuaikan CSS-nya.
 6. **Warna**
    Semua warna ada di blok `:root` pada `styles.css`:
-   - `--bg: #0A0405`
+   - `--bg: #8E0B13` (crimson / latar utama)
    - `--paper: #F2E3C6`
    - `--muted: #1A090B66`
-   - `--gold: #C9A25A` (dipakai lewat alias `--lime`)
+   - `--gold: #C9A25A`
+   - `--gold-soft: #E5CD96` (dipakai lewat alias `--lime`)
    - `--rouge: #8E0B13`
    - `--rouge-deep: #4B080C`
-   - `--gold-soft: #E5CD96`
 
-   Tema **Moulin Rouge**: latar hitam keoxblood dengan glow radial merah tua, teks dan kartu champagne, aksen emas pada tombol/titik/detail chart, serta crimson pada ticker, visual Civic Flow, orb poster, dan hero dialog. `--muted` tetap menjadi lapisan netral untuk kartu identitas, poster About, dan visual Retail Pulse.
+   Tema **Moulin Rouge**: latar crimson dengan vignette oxblood dan glow emas, teks serta kartu champagne, ribbon ticker emas, panel proses hitam, dan aksen emas pada tombol/titik/detail chart. `--muted` tetap menjadi lapisan netral untuk kartu identitas, poster About, dan visual Retail Pulse.
 
 ## Monogram
 
