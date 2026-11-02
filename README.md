@@ -57,6 +57,19 @@ Huruf awal **N** di kartu identitas dan poster About adalah SVG inline, bukan te
 
 Font **Luna Morta** asli tidak disertakan karena lisensi komersial; gaya di atas adalah interpretasi yang aman untuk dipakai.
 
+## Ornamen selestial
+
+Pernak-pernik luar angkasa memakai satu kit SVG di dalam sprite: `#celestial-chart`, `#celestial-moon`, dan `#celestial-star`. Semua elemen dekoratif diberi `aria-hidden` dan memakai palet emas, champagne, serta crimson.
+
+- `.cosmos` — lapisan bintang tetap di belakang halaman, ditambah dua orbit raksasa yang sangat samar.
+- Eyebrow hero — garis, bulan sabit, dan bintang kecil.
+- Kartu identitas — orbit putus-putus di belakang monogram.
+- Poster About — konstelasi dan bulan sabit di langit atas, plus cincin Saturnus pada orb merah.
+- Kontak — bulan sabit besar, konstelasi, dan bintang di latar kanan atas; disembunyikan di layar kecil.
+- Footer — dua bintang kecil di sisi kata `DECODED`.
+
+Semua animasi tetap mengikuti `prefers-reduced-motion`.
+
 ## Interaksi
 
 - Klik kartu proyek untuk membuka **case file** (modal).
